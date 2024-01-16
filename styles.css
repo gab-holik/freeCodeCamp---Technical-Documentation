@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+#navbar {
+  position: fixed;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e9eb;
+  width: 250px;
+  height: 100%;
+}
+nav header {
+  border-bottom: 1px solid #000;
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: #fff;
+  background-color: #059862;
+}
+
+a {
+  text-decoration: none;
+}
+nav a:link {
+  color: #059862;
+}
+nav a:visited {
+  color: #059862;
+}
+nav a:hover {
+  color: #fff;
+}
+.nav-link {
+  border-bottom: 1px solid #000;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 1em 0;
+  font-weight: bold;
+}
+.nav-link:hover {
+  background-color: #059862;
+}
+#main-doc {
+  margin: 0 auto;
+  margin-left: 300px;
+  padding: 2em;
+}
+section header {
+  padding-top: 1em;
+  color: #059862;
+  text-shadow: 1px -1px 2px #000;
+  font-size: 1.5em;
+}
+.bold {
+  font-weight: bold;
+}
+section p,
+section ul {
+  line-height: 2em;
+}
+img {
+  width: 35%;
+  border-radius: 3px;
+}
+code {
+  background-color: #1d1e22;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.colors-container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.color-box {
+  text-align: center;
+  padding-top: 40px;
+  min-width: 150px;
+  min-height: 100px;
+  color: #fff;
+}
+
+.color-yellow {
+  background-color: yellow;
+  color: #000;
+}
+
+.color-lawngreen {
+  background-color: lawngreen;
+}
+.color-blueviolet {
+  background-color: blueviolet;
+}
+.color-red {
+  background-color: red;
+}
+.color-mediumblue {
+  background-color: mediumblue;
+}
+.color-aqua {
+  background-color: aqua;
+}
+
+a[target]:link {
+  color: #059862;
+}
+a[target]:visited {
+  color: #052798;
+}
+#References ul {
+  padding-top: 1em;
+}
+@media (max-width: 800px) {
+  #navbar {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    font-size: 0.5em;
+    gap: 1em;
+    align-items: center;
+    background-color: #fff;
+  }
+  nav header {
+    font-size: 1em;
+    color: #059862;
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+  }
+  .nav-link {
+    border: none;
+  }
+  #main-doc {
+    margin: 0 auto;
+    padding-top: 5em;
+  }
+}

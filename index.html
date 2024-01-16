@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CSS Technical Documentation</title>
+    <script
+      src="https://kit.fontawesome.com/847b0e3032.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1><i class="fa-brands fa-css3-alt"></i> CSS</h1>
+      </header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#What_is_CSS?" class="nav-link">What is CSS?</a>
+      <a href="#CSS_Syntax" class="nav-link">CSS Syntax</a>
+      <a href="#CSS_Selectors" class="nav-link">CSS Selectors</a>
+      <a href="#CSS_Colors" class="nav-link">CSS Colors</a>
+      <a href="#References" class="nav-link">References</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h2>Introduction</h2></header>
+        <article>
+          <p>
+            CSS (Cascading Style Sheets) is the code that styles web content.
+          </p>
+          <p>
+            It is used to style and layout web pages — for example, to alter the
+            font, color, size, and spacing of your content, split it into
+            multiple columns, or add animations and other decorative features.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_is_CSS?">
+        <header><h2>What is CSS?</h2></header>
+        <article>
+          <p>
+            Like HTML, CSS is not a programming language. It's not a markup
+            language either. CSS is a style sheet language. CSS is what you use
+            to selectively style HTML elements. For example, this CSS selects
+            paragraph text, setting the color to blue:
+          </p>
+          <code> p { color: blue; } </code>
+          <p>
+            When a browser reads a style sheet, it will format the HTML document
+            according to the information in the style sheet.
+          </p>
+          <p>There are 3 ways to insesrt CSS:</p>
+          <ul>
+            <li>
+              <p>
+                <span class="bold">Inline</span> styles are CSS declarations
+                that affect a single HTML element, contained within a
+                <code>style</code> attribute.<br />
+                <code
+                  >&ltp style="color:red;"&gt This is a paragraph.&lt/p&gt</code
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="bold">Internal</span> stylesheet may be used if one
+                single HTML page has a unique style. The internal style is
+                defined inside the <code>&ltstyle&gt</code> element, inside the
+                head section.<br />
+                <code>
+                  &ltstyle&gt h1 { text-transform: capitalize; }
+                  &lt/style&gt</code
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="bold">External</span> stylesheet contains CSS in a
+                separate file with a <code>.css</code> extension. This is the
+                most common and useful method of bringing CSS to a document. You
+                can link a single CSS file to multiple web pages, styling all of
+                them with the same CSS stylesheet.<br />
+                <code> &ltlink rel="stylesheet" href="styles.css" /&gt </code>
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Syntax">
+        <header><h2>CSS Syntax</h2></header>
+        <article>
+          <p>A CSS ruleset consists of a selector and a declaration block.</p>
+          <img
+            src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png"
+            alt="CSS Syntax Developer Mozzila Example"
+          />
+          <p>The selector points to the HTML element you want to style.</p>
+
+          <p>
+            The declaration block contains one or more declarations separated by
+            semicolons.
+          </p>
+
+          <p>
+            Each declaration includes a CSS property name and a value, separated
+            by a colon.
+          </p>
+
+          <p>
+            Multiple CSS declarations are separated with semicolons, and
+            declaration blocks are surrounded by curly braces.
+          </p>
+
+          <p>
+            In this example, <span class="bold">p</span> is a selector in CSS
+            (it points to the HTML element you want to style). While
+            <span class="bold">color</span> is a property, and
+            <span class="bold">red</span> is the property value
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="CSS_Selectors">
+        <header><h2>CSS Selectors</h2></header>
+        <article>
+          <p>
+            CSS selectors are used to select the HTML elements you want to
+            style.
+          </p>
+
+          <p>Type of selectors:</p>
+          <ul>
+            <li>
+              Type selector selects HTML elements based on the element name
+              <code>&lth1&gt</code>
+            </li>
+            <li>
+              The class selector selects HTML elements with a specific class
+              attribute <code>.container</code>
+            </li>
+            <li>
+              The id selector uses the id attribute of an HTML element to select
+              a specific element <code>#main-doc</code>
+            </li>
+            <li>
+              The universal selector <code>*</code> selects all HTML elements on
+              the page.
+            </li>
+            <li>
+              Attribute selectors select elements based on an attribute or
+              attribute value <code>a[target="_blank"]</code>
+            </li>
+            <li>
+              Pseudo-classes style certain states of an element eg. when the
+              user hovers over an element <code>:hover</code>
+            </li>
+            <li>
+              Pseudo-elements select a certain part of an element rather than
+              the element itself <code>::first-line</code>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="CSS_Colors">
+        <header><h2>CSS Colors</h2></header>
+        <article>
+          <p>
+            Colors are specified using predefined color names, or RGB, HEX, HSL,
+            RGBA, HSLA values.
+          </p>
+          <p>Example: Colors specified by using predefined color names:</p>
+          <div class="colors-container">
+            <div class="color-yellow color-box">Yellow</div>
+            <div class="color-lawngreen color-box">Lawngreen</div>
+            <div class="color-blueviolet color-box">Blueviolet</div>
+            <div class="color-red color-box">Red</div>
+            <div class="color-mediumblue color-box">Mediumblue</div>
+            <div class="color-aqua color-box">Aqua</div>
+          </div>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header><h2>References</h2></header>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"
+              >W3Schools</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              >MDN Web Docs</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
