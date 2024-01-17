@@ -5,89 +5,102 @@
 }
 
 body {
-  position: relative;
   font-family: sans-serif;
+  position: relative;
 }
+
 #navbar {
-  position: fixed;
-  text-align: center;
+  background-color: #e7e9eb;
   display: flex;
   flex-direction: column;
-  background-color: #e7e9eb;
-  width: 250px;
   height: 100%;
+  position: fixed;
+  text-align: center;
+  width: 250px;
 }
+
 nav header {
+  background-color: #059862;
   border-bottom: 1px solid #000;
+  color: #fff;
   font-size: 2em;
   padding-top: 1em;
   padding-bottom: 0.5em;
-  color: #fff;
-  background-color: #059862;
 }
 
 a {
   text-decoration: none;
 }
+
 nav a:link {
   color: #059862;
 }
+
 nav a:visited {
   color: #059862;
 }
+
 nav a:hover {
   color: #fff;
 }
+
 .nav-link {
   border-bottom: 1px solid #000;
   font-size: 1.5em;
-  width: 100%;
-  padding: 1em 0;
   font-weight: bold;
+  padding: 1em 0;
+  width: 100%;
 }
+
 .nav-link:hover {
   background-color: #059862;
 }
+
 #main-doc {
   margin: 0 auto;
   margin-left: 300px;
   padding: 2em;
 }
 section header {
-  padding-top: 1em;
   color: #059862;
-  text-shadow: 1px -1px 2px #000;
   font-size: 1.5em;
+  padding-top: 1em;
+  text-shadow: 1px -1px 2px #000;
 }
+
 .bold {
   font-weight: bold;
 }
+
 section p,
 section ul {
   line-height: 2em;
 }
+
 img {
-  width: 35%;
   border-radius: 3px;
+  width: 35%;
 }
+
 code {
   background-color: #1d1e22;
+  border-radius: 3px;
   color: #fff;
   padding: 5px;
-  border-radius: 3px;
 }
 
 .colors-container {
   display: flex;
-  gap: 1em;
   flex-wrap: wrap;
+  gap: 1em;
 }
+
 .color-box {
-  text-align: center;
-  padding-top: 40px;
-  min-width: 150px;
-  min-height: 100px;
   color: #fff;
+  min-height: 100px;
+  min-width: 150px;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .color-yellow {
@@ -98,15 +111,19 @@ code {
 .color-lawngreen {
   background-color: lawngreen;
 }
+
 .color-blueviolet {
   background-color: blueviolet;
 }
+
 .color-red {
   background-color: red;
 }
+
 .color-mediumblue {
   background-color: mediumblue;
 }
+
 .color-aqua {
   background-color: aqua;
 }
@@ -117,25 +134,26 @@ a[target]:link {
 a[target]:visited {
   color: #052798;
 }
+
 #References ul {
   padding-top: 1em;
 }
 @media (max-width: 800px) {
   #navbar {
-    flex-direction: row;
-    width: auto;
-    height: auto;
-    font-size: 0.5em;
-    gap: 1em;
     align-items: center;
     background-color: #fff;
+    flex-direction: row;
+    font-size: 0.5em;
+    gap: 1em;
+    height: auto;
+    width: auto;
   }
   nav header {
-    font-size: 1em;
-    color: #059862;
-    padding: 5px;
     background-color: #fff;
     border: none;
+    color: #059862;
+    font-size: 1em;
+    padding: 5px;
   }
   .nav-link {
     border: none;
